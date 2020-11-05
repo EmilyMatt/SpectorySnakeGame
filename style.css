@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: darkgrey;
+}
+
+.btn {
+    display: inline-flex;
+    position: fixed;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    transition: 0.1s all;
+    cursor: pointer;
+}
+
+#add {
+    left: 50vw;
+    top: 85vh;
+}
+
+#sub {
+    left: 45vw;
+    top: 85vh;
+}
+
+#restart {
+    right: 15vw;
+    width: 100px;
+}
+
+#rules {
+    width: 100px;
+    left: 15vw;
+}
+
+#rules.red {
+    background-color: rgb(167, 0, 0);
+}
+
+#rules.red:hover {
+    background-color: rgb(104, 0, 0);
+}
+
+.btn:hover {
+    background-color: darkgreen;
+    box-shadow: 0 0 2px 2px black;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'digital';
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'digital';
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'digital';
+    height: 1rem;
+}
+
+.game-room {
+    width: 50vw;
+    height: 50vh;
+    box-shadow: 0 0 10px 10px black;
+    align-self: center;
+    background-color: azure;
+}
+
+.snake {
+    display: none;
+    position: absolute;
+    max-width: 20px;
+    max-height: 20px;
+    border-radius: 50%;
+    z-index: 100;
+    text-align: center;
+}
+
+.snake-body {
+    filter: hue-rotate(180deg);
+    z-index: 0;
+}
+
+#food {
+    display: none;
+    position: absolute;
+    max-width: 20px;
+    max-height: 20px;
+    border-radius: 25%;
+    filter: hue-rotate(30deg);
+}
+
+@font-face{
+    font-family: 'digital';
+    src: url(digital.ttf);
+}

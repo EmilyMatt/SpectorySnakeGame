@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My little snake game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>Snake 2020</h1>
+        <p></p>
+        <div class="game-room">
+            <img id="food" src="money.png"></span>
+            <img id="s_0" class="snake" src="logo.jpg"></span>
+        </div>
+        <h3>Change Speed</h3>
+        <span id="add" class="btn" onclick="changeSpeed(true)">+</span>
+        <span id="sub" class="btn" onclick="changeSpeed(false)">-</span>
+        <span id="restart" class="btn" onclick="initGame(event)">Start</span>
+        <span id="rules" class="btn" onclick="changeRules(event)">Snake 2 Rules</span>
+    </body>
+    <script src="./controller.js"></script>
+</html>
