@@ -103,7 +103,8 @@ p {
     max-width: 20px;
     max-height: 20px;
     border-radius: 25%;
-    filter: hue-rotate(30deg);
+    filter: hue-rotate(40deg);
+    filter: brightness(50%);
 }
 
 @font-face{
